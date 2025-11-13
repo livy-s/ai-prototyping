@@ -34,7 +34,7 @@
             background: white;
             border-radius: 20px;
             box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
-            padding: 0px top, 80px sides and bottom
+            padding: 50px 80px 80px 80px;
             display: none;
             flex-direction: column;
             justify-content: flex-start;
@@ -326,7 +326,7 @@
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 30px;
-            margin-top: 30px;
+            margin-top: 20px;
         }
 
         .results-card {
@@ -345,6 +345,32 @@
         .results-card p {
             font-size: 1rem;
             margin-bottom: 0;
+        }
+
+        /* Fix slide 6 spacing */
+        .slide .results-grid {
+            margin-top: 30px;
+        }
+
+        .slide p.linked-text {
+            margin-bottom: 30px;
+        }
+
+        /* Link styling */
+        a.prototype-link {
+            color: #667eea;
+            text-decoration: none;
+            border-bottom: 2px solid #667eea;
+            transition: all 0.3s;
+            font-weight: 500;
+        }
+
+        a.prototype-link:hover {
+            color: #764ba2;
+            border-bottom-color: #764ba2;
+            background: linear-gradient(135deg, rgba(102, 126, 234, 0.1) 0%, rgba(118, 75, 162, 0.1) 100%);
+            padding: 2px 6px;
+            border-radius: 4px;
         }
 
         /* Responsive */
@@ -418,7 +444,7 @@
                     </ul>
                 </div>
                 <div class="column">
-                    <h3>Solution</h3>
+                    <h3>AI-Powered Solution</h3>
                     <ul>
                         <li>Requirements to prototype in <strong>hours</strong></li>
                         <li>Interactive, mobile-responsive application</li>
@@ -458,10 +484,8 @@
 
         <!-- Slide 6: The Result -->
         <div class="slide">
-            
             <h2>The Result: Hiring Hub</h2>
-            
-                <p><a href="https://e.lilly/3Lznoox" target="_blank" class="prototype-link">A functional prototype delivered in real-time conversations with stakeholders</a></p>
+            <p class="linked-text"><a href="https://e.lilly/3Lznoox" target="_blank" class="prototype-link">A functional prototype delivered in real-time conversations with stakeholders</a></p>
             <div class="results-grid">
                 <div class="results-card">
                     <h4>Key Features</h4>
@@ -507,7 +531,7 @@
 
         <!-- Slide 8: Closing -->
         <div class="slide slide-closing">
-            <h2>The Future of<br> Innovation </h2>
+            <h2>The Future of<br>Innovation</h2>
             <div class="tagline">"Show, Don't Just Tell"</div>
             <p style="margin-top: 60px; font-size: 1.3rem;">Rapid prototyping is the new competitive advantage</p>
         </div>
